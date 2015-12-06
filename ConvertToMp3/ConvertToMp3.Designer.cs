@@ -44,6 +44,9 @@
             // listBox
             // 
             this.listBox.AllowDrop = true;
+            this.listBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.listBox.FormattingEnabled = true;
             this.listBox.Location = new System.Drawing.Point(12, 25);
             this.listBox.Name = "listBox";
@@ -66,6 +69,8 @@
             // 
             // progressBar
             // 
+            this.progressBar.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.progressBar.Location = new System.Drawing.Point(12, 526);
             this.progressBar.Name = "progressBar";
             this.progressBar.Size = new System.Drawing.Size(317, 23);
@@ -73,6 +78,7 @@
             // 
             // buttonStart
             // 
+            this.buttonStart.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.buttonStart.Location = new System.Drawing.Point(497, 526);
             this.buttonStart.Name = "buttonStart";
             this.buttonStart.Size = new System.Drawing.Size(75, 23);
@@ -83,6 +89,7 @@
             // 
             // buttonBrowse
             // 
+            this.buttonBrowse.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.buttonBrowse.Location = new System.Drawing.Point(335, 526);
             this.buttonBrowse.Name = "buttonBrowse";
             this.buttonBrowse.Size = new System.Drawing.Size(75, 23);
@@ -93,6 +100,7 @@
             // 
             // labelProgress
             // 
+            this.labelProgress.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.labelProgress.AutoSize = true;
             this.labelProgress.Location = new System.Drawing.Point(12, 507);
             this.labelProgress.Name = "labelProgress";
@@ -102,6 +110,7 @@
             // 
             // checkBoxDeleteOriginals
             // 
+            this.checkBoxDeleteOriginals.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.checkBoxDeleteOriginals.AutoSize = true;
             this.checkBoxDeleteOriginals.Location = new System.Drawing.Point(402, 490);
             this.checkBoxDeleteOriginals.Name = "checkBoxDeleteOriginals";
@@ -112,6 +121,7 @@
             // 
             // buttonClear
             // 
+            this.buttonClear.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.buttonClear.Location = new System.Drawing.Point(416, 526);
             this.buttonClear.Name = "buttonClear";
             this.buttonClear.Size = new System.Drawing.Size(75, 23);
@@ -143,8 +153,9 @@
             this.Controls.Add(this.progressBar);
             this.Controls.Add(this.labelMessage);
             this.Controls.Add(this.listBox);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MinimumSize = new System.Drawing.Size(300, 200);
             this.Name = "FormConvertToMp3";
+            this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Show;
             this.Text = "ConvertToMp3";
             this.Load += new System.EventHandler(this.FormConvertToMp3_Load);
             this.ResumeLayout(false);
