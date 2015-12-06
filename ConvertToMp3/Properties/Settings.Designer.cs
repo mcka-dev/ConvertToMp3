@@ -26,5 +26,18 @@ namespace ConvertToMp3.Properties
                 return defaultInstance;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("C:\\Program Files\\ffmpeg-20150911-git-f58e011-win64-static\\bin\\ffmpeg.exe")]
+        public string FileName
+        {
+            get {
+                return ((string)(this["FileName"]));
+            }
+            set {
+                this["FileName"] = value;
+            }
+        }
     }
 }

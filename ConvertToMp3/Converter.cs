@@ -36,7 +36,7 @@ namespace ConvertToMp3
             {
                 CreateNoWindow = true,
                 UseShellExecute = false,
-                FileName = @"C:\Program Files\ffmpeg-20150911-git-f58e011-win64-static\bin\ffmpeg.exe",
+                FileName = Properties.Settings.Default.FileName,
                 WindowStyle = ProcessWindowStyle.Hidden,
                 Arguments = $"-i \"{sourceFilePath}\" -ab 320k \"{destFilePath}\""
             };
